@@ -1,0 +1,21 @@
+To add a custom map you must follow this syntax:
+
+ - First line must contain map's name (NAME)
+    e.g. NAME="Ellipse"
+
+ - The rest of the lines can be in any order, but there MUST be:
+
+    - Number of enemies (N_ENEMIES)
+        e.g. N_ENEMIES=1
+
+    - At least one player colony (PLAYER_COL)
+
+    - At least one enemy colony (ENEMY_COL)
+
+ - Now you can add as many empty colonies as you want (EMPTY_COLONY)
+
+Every colony follows the same syntax:
+    X_COL=[player_number],[horizontal_position],[vertical_position],[radius]
+
+
+Please DO NOT add any unnecessary spaces or empty lines

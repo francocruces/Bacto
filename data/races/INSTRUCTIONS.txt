@@ -1,0 +1,35 @@
+To add a custom race you can use game's interface or follow this syntax in any order:
+
+ - ID=[id_for_this_race]
+    - Must be unique among all races for the game to properly work
+    - e.g. ID=balanced_race
+
+ - NAME=[name_to_show]
+    - Can have spaces
+    - e.g. Balanced Race
+
+ - STRENGHT=[race_strength]
+
+ - DEFENSE=[race_strength]
+
+ - SPEED=[race_strength]
+
+ - REPRODUCTION_TIME=[race_strength]
+
+ - ANIMATION_ID=[animation]
+    - You can choose from:
+        - spin
+        - eccentric
+        - change_radius
+        - drone
+
+ - COLOR=[color]
+    - Must be written as text
+    e.g. COLOR=black
+
+ - N_SIDES=[number_of_sides_for_race_polygon]
+    - Must be an integer
+    e.g. N_SIDES=3
+
+
+Please DO NOT add any unnecessary spaces or empty lines

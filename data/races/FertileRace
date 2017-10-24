@@ -1,0 +1,9 @@
+ID=fertile_race
+NAME=Fertile Race
+STRENGTH=8
+DEFENSE=11
+SPEED=7
+REPRODUCTION_TIME=7
+ANIMATION_ID=eccentric
+COLOR=yellow4
+N_SIDES=5
