@@ -91,9 +91,14 @@ class RandomPlayer(Player):
                 if c.colony.race.same_type(self.race):
                     random = np.random.rand(1)
                     if random > PlayerSettings.ATTACK_PROBABILITY:
-                        while True:
-                            target = a_map.graphic_colonies[np.random.randint(0, len(a_map.graphic_colonies))]
-                            if not target.colony.race.same_type(self.race):
-                                c.send_party(target)
-                                break
+                        enemy_colonies = self.get_enemy_colonies(a_map)
+                        target = enemy_colonies[np.random.randint(0, len(enemy_colonies))]
+                        c.send_party(target)
             self.time = 0
+
+    def get_enemy_colonies(self, a_map):
+        result = []
+        for c in a_map.graphic_colonies:
+            if not c.colony.race.same_type(self.race):
+                result.append(c)
+        return result
